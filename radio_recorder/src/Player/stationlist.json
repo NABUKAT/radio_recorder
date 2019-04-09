@@ -1,0 +1,2036 @@
+{
+    "北海道": [
+        {
+            "code": "HBC",
+            "name": "ＨＢＣラジオ"
+        },
+        {
+            "code": "STV",
+            "name": "ＳＴＶラジオ"
+        },
+        {
+            "code": "AIR-G",
+            "name": "AIR-G'（FM北海道）"
+        },
+        {
+            "code": "NORTHWAVE",
+            "name": "FM NORTH WAVE"
+        },
+        {
+            "code": "JOIK",
+            "name": "NHKラジオ第1（札幌）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "青森県": [
+        {
+            "code": "RAB",
+            "name": "ＲＡＢ青森放送"
+        },
+        {
+            "code": "AFB",
+            "name": "エフエム青森"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "岩手県": [
+        {
+            "code": "IBC",
+            "name": "IBCラジオ"
+        },
+        {
+            "code": "FMI",
+            "name": "エフエム岩手"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "宮城県": [
+        {
+            "code": "TBC",
+            "name": "TBCラジオ"
+        },
+        {
+            "code": "DATEFM",
+            "name": "Date fm エフエム仙台"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "秋田県": [
+        {
+            "code": "ABS",
+            "name": "ＡＢＳ秋田放送"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "山形県": [
+        {
+            "code": "YBC",
+            "name": "YBC山形放送"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "福島県": [
+        {
+            "code": "RFC",
+            "name": "RFCラジオ福島"
+        },
+        {
+            "code": "FMF",
+            "name": "ふくしまFM"
+        },
+        {
+            "code": "JOHK",
+            "name": "NHKラジオ第1（仙台）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "茨城県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "IBS",
+            "name": "IBS茨城放送"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "栃木県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "CRT",
+            "name": "CRT栃木放送"
+        },
+        {
+            "code": "RADIOBERRY",
+            "name": "RadioBerry"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "群馬県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "FMGUNMA",
+            "name": "FM GUNMA"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "埼玉県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "千葉県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "東京都": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "神奈川県": [
+        {
+            "code": "TBS",
+            "name": "TBSラジオ"
+        },
+        {
+            "code": "QRR",
+            "name": "文化放送"
+        },
+        {
+            "code": "LFR",
+            "name": "ニッポン放送"
+        },
+        {
+            "code": "INT",
+            "name": "InterFM897"
+        },
+        {
+            "code": "FMT",
+            "name": "TOKYO FM"
+        },
+        {
+            "code": "FMJ",
+            "name": "J-WAVE"
+        },
+        {
+            "code": "JORF",
+            "name": "ラジオ日本"
+        },
+        {
+            "code": "BAYFM78",
+            "name": "bayfm78"
+        },
+        {
+            "code": "NACK5",
+            "name": "NACK5"
+        },
+        {
+            "code": "YFM",
+            "name": "ＦＭヨコハマ"
+        },
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "新潟県": [
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "BSN",
+            "name": "ＢＳＮラジオ"
+        },
+        {
+            "code": "FMNIIGATA",
+            "name": "FM NIIGATA"
+        },
+        {
+            "code": "FMPORT",
+            "name": "FM PORT"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "山梨県": [
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "YBS",
+            "name": "ＹＢＳラジオ"
+        },
+        {
+            "code": "FM-FUJI",
+            "name": "FM FUJI"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "長野県": [
+        {
+            "code": "JOAK",
+            "name": "NHKラジオ第1（東京）"
+        },
+        {
+            "code": "SBC",
+            "name": "SBCラジオ"
+        },
+        {
+            "code": "FMN",
+            "name": "ＦＭ長野"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "石川県": [
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "MRO",
+            "name": "MRO北陸放送ラジオ"
+        },
+        {
+            "code": "HELLOFIVE",
+            "name": "エフエム石川"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "富山県": [
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "KNB",
+            "name": "ＫＮＢラジオ"
+        },
+        {
+            "code": "FMTOYAMA",
+            "name": "ＦＭとやま"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "福井県": [
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "FBC",
+            "name": "FBCラジオ"
+        },
+        {
+            "code": "FMFUKUI",
+            "name": "FM福井"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "岐阜県": [
+        {
+            "code": "CBC",
+            "name": "CBCラジオ"
+        },
+        {
+            "code": "TOKAIRADIO",
+            "name": "東海ラジオ"
+        },
+        {
+            "code": "GBS",
+            "name": "ぎふチャン"
+        },
+        {
+            "code": "ZIP-FM",
+            "name": "ZIP-FM"
+        },
+        {
+            "code": "RADIONEO",
+            "name": "RADIO NEO"
+        },
+        {
+            "code": "FMAICHI",
+            "name": "＠ＦＭ"
+        },
+        {
+            "code": "FMGIFU",
+            "name": "ＦＭ ＧＩＦＵ"
+        },
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "静岡県": [
+        {
+            "code": "SBS",
+            "name": "SBSラジオ"
+        },
+        {
+            "code": "K-MIX",
+            "name": "K-MIX SHIZUOKA"
+        },
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "愛知県": [
+        {
+            "code": "CBC",
+            "name": "CBCラジオ"
+        },
+        {
+            "code": "TOKAIRADIO",
+            "name": "東海ラジオ"
+        },
+        {
+            "code": "GBS",
+            "name": "ぎふチャン"
+        },
+        {
+            "code": "ZIP-FM",
+            "name": "ZIP-FM"
+        },
+        {
+            "code": "RADIONEO",
+            "name": "RADIO NEO"
+        },
+        {
+            "code": "FMAICHI",
+            "name": "＠ＦＭ"
+        },
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "三重県": [
+        {
+            "code": "CBC",
+            "name": "CBCラジオ"
+        },
+        {
+            "code": "TOKAIRADIO",
+            "name": "東海ラジオ"
+        },
+        {
+            "code": "GBS",
+            "name": "ぎふチャン"
+        },
+        {
+            "code": "ZIP-FM",
+            "name": "ZIP-FM"
+        },
+        {
+            "code": "RADIONEO",
+            "name": "RADIO NEO"
+        },
+        {
+            "code": "FMAICHI",
+            "name": "＠ＦＭ"
+        },
+        {
+            "code": "FMMIE",
+            "name": "レディオキューブ ＦＭ三重"
+        },
+        {
+            "code": "JOCK",
+            "name": "NHKラジオ第1（名古屋）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "大阪府": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "CRK",
+            "name": "ラジオ関西"
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "兵庫県": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "CRK",
+            "name": "ラジオ関西"
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "京都府": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "CRK",
+            "name": "ラジオ関西"
+        },
+        {
+            "code": "KBS",
+            "name": "KBS京都ラジオ "
+        },
+        {
+            "code": "ALPHA-STATION",
+            "name": "α-STATION FM京都"
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "滋賀県": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "E-RADIO",
+            "name": "e-radio FM滋賀"
+        },
+        {
+            "code": "KBS",
+            "name": "KBS京都ラジオ "
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "奈良県": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "和歌山県": [
+        {
+            "code": "ABC",
+            "name": "ABCラジオ"
+        },
+        {
+            "code": "MBS",
+            "name": "MBSラジオ"
+        },
+        {
+            "code": "OBC",
+            "name": "OBCラジオ大阪"
+        },
+        {
+            "code": "CCL",
+            "name": "FM COCOLO"
+        },
+        {
+            "code": "802",
+            "name": "FM802"
+        },
+        {
+            "code": "FMO",
+            "name": "FM OH!"
+        },
+        {
+            "code": "KISSFMKOBE",
+            "name": "Kiss FM KOBE"
+        },
+        {
+            "code": "WBS",
+            "name": "wbs和歌山放送"
+        },
+        {
+            "code": "JOBK",
+            "name": "NHKラジオ第1（大阪）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "岡山県": [
+        {
+            "code": "RSK",
+            "name": "ＲＳＫラジオ"
+        },
+        {
+            "code": "JOFK",
+            "name": "NHKラジオ第1（広島）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "広島県": [
+        {
+            "code": "RCC",
+            "name": "RCCラジオ"
+        },
+        {
+            "code": "HFM",
+            "name": "広島FM"
+        },
+        {
+            "code": "JOFK",
+            "name": "NHKラジオ第1（広島）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "鳥取県": [
+        {
+            "code": "BSS",
+            "name": "BSSラジオ"
+        },
+        {
+            "code": "JOFK",
+            "name": "NHKラジオ第1（広島）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "島根県": [
+        {
+            "code": "BSS",
+            "name": "BSSラジオ"
+        },
+        {
+            "code": "JOFK",
+            "name": "NHKラジオ第1（広島）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "山口県": [
+        {
+            "code": "KRY",
+            "name": "ＫＲＹ山口放送"
+        },
+        {
+            "code": "FMY",
+            "name": "エフエム山口"
+        },
+        {
+            "code": "JOFK",
+            "name": "NHKラジオ第1（広島）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "香川県": [
+        {
+            "code": "RNC",
+            "name": "RNC西日本放送"
+        },
+        {
+            "code": "FMKAGAWA",
+            "name": "エフエム香川"
+        },
+        {
+            "code": "JOZK",
+            "name": "NHKラジオ第1（松山）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "徳島県": [
+        {
+            "code": "JRT",
+            "name": "ＪＲＴ四国放送"
+        },
+        {
+            "code": "JOZK",
+            "name": "NHKラジオ第1（松山）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "愛媛県": [
+        {
+            "code": "RNB",
+            "name": "RNB南海放送"
+        },
+        {
+            "code": "JOEU-FM",
+            "name": "FM愛媛"
+        },
+        {
+            "code": "JOZK",
+            "name": "NHKラジオ第1（松山）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "高知県": [
+        {
+            "code": "RKC",
+            "name": "RKC高知放送"
+        },
+        {
+            "code": "JOZK",
+            "name": "NHKラジオ第1（松山）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "福岡県": [
+        {
+            "code": "RKB",
+            "name": "RKBラジオ"
+        },
+        {
+            "code": "KBC",
+            "name": "KBCラジオ"
+        },
+        {
+            "code": "LOVEFM",
+            "name": "LOVE FM"
+        },
+        {
+            "code": "CROSSFM",
+            "name": "CROSS FM"
+        },
+        {
+            "code": "FMFUKUOKA",
+            "name": "FM FUKUOKA "
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "佐賀県": [
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "長崎県": [
+        {
+            "code": "NBC",
+            "name": "NBC長崎放送"
+        },
+        {
+            "code": "FMNAGASAKI",
+            "name": "FM長崎"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "熊本県": [
+        {
+            "code": "RKK",
+            "name": "RKKラジオ"
+        },
+        {
+            "code": "FMK",
+            "name": "FMKエフエム熊本"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "大分県": [
+        {
+            "code": "OBS",
+            "name": "OBSラジオ"
+        },
+        {
+            "code": "FM_OITA",
+            "name": "エフエム大分"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "宮崎県": [
+        {
+            "code": "MRT",
+            "name": "宮崎放送"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "鹿児島県": [
+        {
+            "code": "MBC",
+            "name": "ＭＢＣラジオ"
+        },
+        {
+            "code": "MYUFM",
+            "name": "μＦＭ"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ],
+    "沖縄県": [
+        {
+            "code": "RBC",
+            "name": "RBCiラジオ"
+        },
+        {
+            "code": "ROK",
+            "name": "ラジオ沖縄"
+        },
+        {
+            "code": "FM_OKINAWA",
+            "name": "FM沖縄"
+        },
+        {
+            "code": "JOLK",
+            "name": "NHKラジオ第1（福岡）"
+        },
+        {
+            "code": "RN1",
+            "name": "ラジオNIKKEI第1 "
+        },
+        {
+            "code": "RN2",
+            "name": "ラジオNIKKEI第2"
+        },
+        {
+            "code": "HOUSOU-DAIGAKU",
+            "name": "放送大学"
+        },
+        {
+            "code": "JOAB",
+            "name": "NHKラジオ第2"
+        },
+        {
+            "code": "JOAK-FM",
+            "name": "NHK-FM（東京）"
+        }
+    ]
+}

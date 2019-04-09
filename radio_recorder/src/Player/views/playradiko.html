@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+<title>Radiko リモコン</title>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<style type="text/css">
+<!--
+table {
+        border-collapse: collapse;
+        width:100%;
+        font-size: 11pt;
+}
+th {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        font-weight: normal;
+}
+td {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        height: 40px;
+}
+tr:hover {
+    background: #3D80DF;
+    color: #FFFFFF;
+}
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  visibility: visible;
+  text-align: center;
+  position : fixed;
+  background: #f0f8ff;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  right: 0px;
+  padding-top: 20px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);/*アイコン色*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(4, 137, 177, 1);
+}
+.fas{
+    display: block;
+    margin-top: 10px;
+}
+.fas.fa-play,.fas.fa-pause,.fas.fa-stop{
+    font-size: 20px;
+    margin-top: 15px;
+}
+-->
+</style>
+</head>
+<body>
+<table id="list"></table>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<div class="popup-overlay">
+
+<span class="btn">
+<i id="stop_btn" class="fas fa-stop" onclick=""></i>
+</span>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script>
+
+// 初期処理
+$(function(){
+   // 県の取得
+   var ClientLocation = google.loader.ClientLocation;
+   var p = ClientLocation.address.region;
+
+   // リスト表示
+   changestate(p);
+});
+
+// リスト項目選択検知
+$(document).on("click", ".req_list", function(){
+   var p =  $(this).attr("id");
+   // 再生処理
+   play(p);
+});
+
+// 停止ボタンクリック
+$(document).on("click", "#stop_btn", function(){
+   stop();
+});
+
+// リスト表示変更
+function changestate(p){
+   $.get("/playradiko?com=stationlist&p=" + p, function(data){
+      var getdata = $.parseJSON(data);
+      // リスト作成
+      var ld = "";
+      for(var i=0; i<getdata.length; i++){
+         ld = ld + "<tr><td class='req_list' id='" + getdata[i]["code"] + "' onclick=''>" + getdata[i]["name"] + "</td></td>"
+      }
+      $('#list').html(ld);
+   });
+}
+
+// 再生
+function play(ch){
+   $.get("/playradiko?com=play&ch=" + ch, function(data){});
+}
+
+// 停止
+function stop(){
+   $.get("/playradiko?com=stop", function(data){});
+}
+</script>
+</body>
+</html>

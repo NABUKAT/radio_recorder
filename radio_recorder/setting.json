@@ -1,0 +1,37 @@
+{
+    "dec_deploy_files": "ローカルファイルとリモートファイルの対応",
+    "deploy_files": [    
+        {"local_filepath": "src/setup/setup.sh", "remote_directory": "/home/pi/setup", "user": "pi", "group": "pi", "permission": "755"},
+        {"local_filepath": "src/Player/views/index.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/views/recradiko.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/views/recradikoset.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/views/playradiko.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/views/addpage.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/views/editpage.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/dirtojson.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/myomxplayer.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/player_state.txt", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/bottlerun.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/webserver.sh", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "755"},
+        {"local_filepath": "src/Player/radikoplayer", "remote_directory": "/etc/rc.local.d", "user": "root", "group": "root", "permission": "644"},
+        {"local_filepath": "src/Player/playradiko.sh", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "755"},
+        {"local_filepath": "src/Player/radiko.sh", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "755"},
+        {"local_filepath": "src/Player/stationlist.json", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/prefecture2stations.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/recordersetting.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Recorder/radiko_schedule", "remote_directory": "/etc/cron.d", "user": "root", "group": "root", "permission": "644"},
+        {"local_filepath": "src/Recorder/rec_set.sh", "remote_directory": "/home/pi/RadikoRecorder/bin", "user": "pi", "group": "pi", "permission": "755"},
+        {"local_filepath": "src/Recorder/radiko.sh", "remote_directory": "/home/pi/RadikoRecorder/bin", "user": "root", "group": "root", "permission": "755"}
+    ],
+
+    "dec_procupdn_01": "プロセス起動・停止のコマンドを指定",
+    "dec_procupdn_02": "プロセス起動・停止の必要がなければ「none」",
+    "process_up_com": "none",
+    "process_dn_com": "none",
+
+    "dec_account": "アカウント情報(ユーザにsudo権限が必要)",
+    "account": {
+        "user": "pi",
+        "pass": "raspberry"
+    }
+}

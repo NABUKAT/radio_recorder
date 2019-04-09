@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+<title>ラジオ録音設定</title>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<style type="text/css">
+<!--
+table {
+        border-collapse: collapse;
+        width:100%;
+        font-size: 11pt;
+}
+th {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        font-weight: normal;
+}
+td {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        height: 40px;
+}
+tr:hover {
+    background: #3D80DF;
+    color: #FFFFFF;
+}
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  position : fixed;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  bottom: 30px;
+  right: 30px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);/*アイコン色*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(4, 137, 177, 1);
+}
+.fas{
+    display: block;
+    margin-top: 10px;
+}
+.fas.fa-pencil-alt,.fas.fa-trash-alt,.fas.fa-plus{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+-->
+</style>
+</head>
+<body>
+
+<table id="list"></table>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<div class="popup-overlay">
+
+<span class="btn">
+<i id="add" class="fas fa-plus" onclick=""></i>
+</span>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+<script>
+var state = "/media/radiko";
+var backstate = [];
+var listdata;
+
+// 初期処理
+$(function(){
+   // リスト表示
+   changestate(state);
+});
+
+// 戻るボタン検知
+$(window).on('popstate', function(e) {
+   window.location.href = "/";
+});
+
+// 追加ボタンクリック
+$(document).on("click", "#add", function(){
+   // 追加
+   window.location.href = "/addpage";
+});
+
+// 編集ボタンクリック
+$(document).on("click", ".edit", function(){
+   // 編集
+   sf = $(this).attr("id");
+   window.location.href = "/editpage?sf=" + sf;
+});
+
+// 削除ボタンクリック
+$(document).on("click", ".del", function(){
+   // 削除
+   sf = $(this).attr("id");
+   for(var i in listdata){
+      if(listdata[i]["settingfile"] == sf){
+         if(window.confirm(listdata[i]["name"] + 'を削除しますか？')){
+            $.get("/recradikoset?com=delete&sf=" + sf, function(data){               
+               window.location.reload();
+            });
+         }
+      }
+   }
+});
+
+// リスト表示変更
+function changestate(p, back=false){
+   $.get("/recradikoset?com=listview", function(data){
+      listdata = $.parseJSON(data);
+      var ld = "";
+      for(var i in listdata){
+         ld = ld + "<tr><td class='req_list'>" + listdata[i]["name"] + "</td><td><i id='" + listdata[i]["settingfile"] + "' class='edit fas fa-pencil-alt' onclick=''></i></td><td><i id='" + listdata[i]["settingfile"] + "' class='del fas fa-trash-alt' onclick=''></i></td></tr>"
+      }
+      if(listdata.length == 0){
+         ld = "<tr><td>録音設定はありません。</td></tr>"
+      }
+      if(back == false){
+         history.pushState(null, null);
+         backstate.push(state);
+         state = p;
+      }
+      $('#list').html(ld);
+   });
+}
+</script>
+</body>
+</html>

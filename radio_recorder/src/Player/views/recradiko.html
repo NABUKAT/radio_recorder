@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+<title>録音ラジオプレイヤー</title>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<style type="text/css">
+<!--
+table {
+        border-collapse: collapse;
+        width:100%;
+        font-size: 11pt;
+}
+th {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        font-weight: normal;
+}
+td {
+        border-bottom: #e3e3e3 1px dotted;
+        text-align: left;
+        padding: 5px;
+        height: 40px;
+}
+tr:hover {
+    background: #3D80DF;
+    color: #FFFFFF;
+}
+.popup-overlay{
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position : fixed;
+  background: #f0f8ff;
+  width: 100%;
+  height: 80px;
+  bottom: 10px;
+  right: 0px;
+  padding-top: 20px;
+}
+.popup-overlay.active{
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);/*アイコン色*/
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgba(4, 137, 177, 1);
+}
+.fas{
+    display: block;
+    margin-top: 10px;
+}
+.fas.fa-play,.fas.fa-pause,.fas.fa-stop{
+    font-size: 20px;
+    margin-top: 15px;
+}
+-->
+</style>
+</head>
+<body>
+
+<table id="list"></table>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<div class="popup-overlay">
+
+<span class="btn">
+<i id="m600" class="fas fa-angle-double-left" onclick=""></i>
+</span>
+
+<span class="btn">
+<i id="m30" class="fas fa-angle-left" onclick=""></i>
+</span>
+
+<span id="img_play" class="btn">
+<i id="play_btn" class="fas fa-play" onclick=""></i>
+</span>
+
+<span id="img_pause" class="btn">
+<i id="pause_btn" class="fas fa-pause" onclick=""></i>
+</span>
+
+<span class="btn">
+<i id="stop_btn" class="fas fa-stop" onclick=""></i>
+</span>
+
+<span class="btn">
+<i id="p30" class="fas fa-angle-right" onclick=""></i>
+</span>
+
+<span class="btn">
+<i id="p600" class="fas fa-angle-double-right" onclick=""></i>
+</span>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+<script>
+var state = "/media/radiko";
+var backstate = [];
+
+// 初期処理
+$(function(){
+   // リスト表示
+   changestate(state);
+
+   //プレイ状態確認
+   confirm()
+});
+
+// リスト項目選択検知
+$(document).on("click", ".req_list", function(){
+   var p =  $(this).attr("id");
+   changestate(p);
+});
+
+// 戻るボタン検知
+$(window).on('popstate', function(e) {
+   state = backstate.pop();
+   if(backstate.length == 0){
+      window.history.back(-1);
+   }
+   changestate(state, true);
+});
+
+// 再生ボタンクリック
+$(document).on("click", "#play_btn", function(){
+   player_control("play");
+});
+
+// 10分戻しボタンクリック
+$(document).on("click", "#m600", function(){
+   player_control("m600");
+});
+
+// 30秒戻しボタンクリック
+$(document).on("click", "#m30", function(){
+   player_control("m30");
+});
+
+// 30秒送りボタンクリック
+$(document).on("click", "#p30", function(){
+   player_control("p30");
+});
+
+// 10分送りボタンクリック
+$(document).on("click", "#p600", function(){
+   player_control("p600");
+});
+
+// 一時停止ボタンクリック
+$(document).on("click", "#pause_btn", function(){
+   player_control("pause");
+});
+
+// 停止ボタンクリック
+$(document).on("click", "#stop_btn", function(){
+   player_control("stop");
+});
+
+// リスト表示変更
+function changestate(p, back=false){
+   $.get("/recradiko?com=list&path=" + p, function(data){
+      if(data == "thisisfile"){
+         // プレイヤー表示
+         $(".popup-overlay").addClass("active");
+         // 再生ボタン非表示
+         $("#img_play").hide();
+         // 一時停止ボタン表示
+         $("#img_pause").show();
+         return;
+      }
+      var getdata = $.parseJSON(data);
+      // リスト作成
+      var listdata = getdata[p];
+      var ld = "";
+      for(var i in listdata){
+         if(typeof listdata[i] == "object"){
+            for(var key in listdata[i]){
+               k = key.replace(/.*\//g, "");
+               ld = ld + "<tr><td class='req_list' id='" + key + "' onclick=''>" + k + "</td></tr>"
+            }
+         }
+         else{
+             k = listdata[i].replace(/.*\//g, "").replace(/\..*/g, "");
+             ld = ld + "<tr><td class='req_list' id='" + p + "/" + listdata[i] + "' onclick=''>" + k + "</td></tr>"
+         }
+      }
+      if(listdata.length == 0){
+         ld = "<tr><td>録音番組はありません。</td></tr>"
+      }
+      if(back == false){
+         history.pushState(null, null);
+         backstate.push(state);
+         state = p;
+      }
+      $('#list').html(ld);
+   });
+}
+
+// 再生状況確認
+function confirm(){
+   $.get("/recradiko?com=confirm", function(data){
+      if(data == "play"){
+         // プレイヤー表示
+         $(".popup-overlay").addClass("active");
+         // 再生ボタン非表示
+         $("#img_play").hide();
+         // 一時停止ボタン表示
+         $("#img_pause").show();
+      }
+      else if(data == "pause"){
+         // プレイヤー表示
+         $(".popup-overlay").addClass("active");
+         // 再生ボタン表示
+         $("#img_play").show();
+         // 一時停止ボタン非表示
+         $("#img_pause").hide();
+      }
+      else if(data == "stop"){
+         // プレイヤー非表示
+         $(".popup-overlay").removeClass("active");
+      }
+   });
+}
+
+// プレイヤー操作
+function player_control(com){
+   $.get("/recradiko?com=" + com, function(data){
+      if(data == "play"){
+         // プレイヤー表示
+         $(".popup-overlay").addClass("active");
+         // 再生ボタン非表示
+         $("#img_play").hide();
+         // 一時停止ボタン表示
+         $("#img_pause").show();
+      }
+      else if(data == "pause"){
+         // プレイヤー表示
+         $(".popup-overlay").addClass("active");
+         // 再生ボタン表示
+         $("#img_play").show();
+         // 一時停止ボタン非表示
+         $("#img_pause").hide();
+      }
+      else if(data == "stop"){
+         // プレイヤー非表示
+         $(".popup-overlay").removeClass("active");
+      }
+   });
+}
+
+// 5秒に一度状態を確認
+function confirm_interval(){
+   $.get("/recradiko?com=confirm", function(data){
+      if(data == "play"){
+         // 再生位置を取得して更新
+
+      }
+      else if(data == "stop"){
+         // プレイヤー非表示
+         $(".popup-overlay").removeClass("active");
+      }
+   });
+}
+setInterval(confirm_interval, 5000);
+</script>
+</body>
+</html>

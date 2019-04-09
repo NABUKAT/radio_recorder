@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+<title>ラジオ録音設定編集</title>
+<link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
+<style type="text/css">
+<!--
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.cp_iptxt input {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 1px solid #bbbbbb;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 80%;
+	margin: 40px 3%;
+	text-align: center;
+}
+.cp_ipselect select {
+	font: 15px/24px sans-serif;
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl02 {
+	position: relative;
+	border: 1px solid #bbbbbb;
+	border-radius: 4px;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl02::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.9em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #666666;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl02:after {
+	position: absolute;
+	top: 0;
+	right: 2.5em;
+	bottom: 0;
+	width: 1px;
+	content: '';
+	border-left: 1px solid #bbbbbb;
+}
+.cp_ipselect.cp_sl02 select {   
+	padding: 0.3em;
+	padding-left: 40px;
+	color: #666666;
+}
+.cp_ipselect.cp_sl02 i {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+
+.cp_ipradio {
+	width: 90%;
+	margin: 2em auto;
+	text-align: left;
+}
+.cp_ipradio input[type='radio'] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.cp_ipradio label {
+	position: relative;
+	display: inline-block;
+	margin-right: 12px;
+	padding: 3px;
+	cursor: pointer;
+}
+.cp_ipradio label::before {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 24px;
+	height: 24px;
+	content: ' ';
+	border: 1px solid #666666;
+	border-radius: 4px;
+}
+.cp_ipradio input[type='radio'] + label::before {
+	border-radius: 9px;
+}
+.cp_ipradio input[type='radio']:checked + label {
+	padding: 3px;
+	color: #ffffff;
+}
+.cp_ipradio input[type='radio']:checked + label::before {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #666666;
+}
+/* Transition */
+.cp_ipradio label, .cp_ipradio label::before {
+	-webkit-transition: 0.25s all ease;
+	        transition: 0.25s all ease;
+}
+
+.time {
+	position: relative;
+	width: 80%;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+.time:before {
+   content: "録音開始時刻: ";
+}
+
+.reg_btn {
+	position: relative;
+	width: 100%;
+   text-align: center;
+}
+.btn-square-little-rich {
+  position: relative;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #03A9F4;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.btn-square-little-rich:active {
+  /*押したとき*/
+  border: solid 1px #03A9F4;
+  box-shadow: none;
+  text-shadow: none;
+}
+-->
+</style>
+</head>
+<body>
+
+<div class="cp_iptxt">
+<input type="text" id="name" placeholder="番組名">
+<i class="far fa-newspaper" aria-hidden="true"></i>
+</div>
+
+<div class="cp_ipselect cp_sl02">
+<select id="radio_st" name="radio_st" required>
+	<option value="" hidden>ラジオ局</option>
+</select>
+<i class="fas fa-broadcast-tower" aria-hidden="true"></i>
+</div>
+
+<div class="cp_ipradio">
+	<input type="radio" name="dw" id="a_rb7" value="0" />
+	<label for="a_rb7">日</label>
+	<input type="radio" name="dw" id="a_rb1" value="1" />
+	<label for="a_rb1">月</label>
+	<input type="radio" name="dw" id="a_rb2" value="2" />
+	<label for="a_rb2">火</label>
+	<input type="radio" name="dw" id="a_rb3" value="3" />
+	<label for="a_rb3">水</label>
+	<input type="radio" name="dw" id="a_rb4" value="4" />
+	<label for="a_rb4">木</label>
+	<input type="radio" name="dw" id="a_rb5" value="5" />
+	<label for="a_rb5">金</label>
+	<input type="radio" name="dw" id="a_rb6" value="6" />
+	<label for="a_rb6">土</label>
+</div>
+
+<div class="cp_iptxt">
+<input type="time" class="time" name="time">
+<i class="far fa-clock" aria-hidden="true"></i>
+</div>
+
+<div class="cp_ipselect cp_sl02">
+<select name="rt" required>
+	<option value="" hidden>録音時間</option>
+	<option value="30">30分</option>
+	<option value="60">60分</option>
+	<option value="90">90分</option>
+	<option value="120">120分</option>
+	<option value="150">150分</option>
+	<option value="180">180分</option>
+</select>
+<i class="fas fa-stopwatch" aria-hidden="true"></i>
+</div>
+
+<div class="reg_btn">
+<a href="#" id="edit" class="btn-square-little-rich">変更</a>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script>
+var state = "/media/radiko";
+var backstate = [];
+var listdata;
+
+var sf = "{{sf}}";
+
+// 初期処理
+$(function(){
+   // 県の取得
+   var ClientLocation = google.loader.ClientLocation;
+   var p = ClientLocation.address.region;
+
+   // リスト表示
+   changestate(p);
+});
+
+// 変更ボタンクリック
+$(document).on("click", "#edit", function(){
+   // 入力値の取得
+   var ch = $("[name=radio_st]").val();
+   var rt = $("[name=rt]").val();
+   var name = $("#name").val();
+   var dw = $("input[name=dw]:checked").val();
+   var time = $("input[name=time]").val();
+
+   // 入力チェック
+   if(name == ""){
+      alert("録音設定名を入力してください。")
+      return;
+   }
+   else if(ch == ""){
+      alert("ラジオ局を選択してください。")
+      return;
+   }
+   else if(dw == null){
+      alert("曜日を選択してください。")
+      return;
+   }
+   else if(time == ""){
+      alert("録音開始時刻を選択してください。")
+      return;
+   }
+   else if(rt == ""){
+      alert("録音時間を入力してください。")
+      return;
+   }
+
+   // 時刻整形
+   var hm = time.split(":")[0];
+   var h = hm[0];
+   var m = hm[1];
+
+   // 登録
+   $.get("/editpage?com=edit&ch="+ch+"&rt="+rt+"&name="+name+"&dw="+dw+"&h="+h+"&m="+m+"&sf="+sf, function(data){
+      window.location.href = "/recradikoset";
+   });
+});
+
+// リスト表示変更
+function changestate(p){
+    $.get("/editpage?com=stationlist&p=" + p, function(data){
+        var getdata = $.parseJSON(data);
+        // リスト作成
+        var ld = "";
+        for(var i=0; i<getdata.length; i++){
+            ld = ld + "<option value='" + getdata[i]["code"] + "'>" + getdata[i]["name"] + "</option>"
+        }
+        $('#radio_st').append(ld);
+        $.get("/editpage?com=editview&sf=" + sf, function(data){
+            var dp = $.parseJSON(data);
+            // 設定値の入力
+            $("[name=radio_st] option[value="+dp["channel"]+"]").prop('selected',true);
+            $("[name=rt] option[value="+dp["rectime"]+"]").prop('selected',true);
+            $("#name").val(dp["name"]);
+            $("input[name=dw]:eq("+dp["schedule"][4]+")").prop('checked',true);
+            var hh = dp["schedule"][1].length == 1 ? "0" + dp["schedule"][1] : dp["schedule"][1];
+            var mm = dp["schedule"][0].length == 1 ? "0" + dp["schedule"][0] : dp["schedule"][0];
+            var timestr = hh + ":" + mm;
+            $("input[name=time]").val(timestr);
+        });
+   });
+}
+</script>
+</body>
+</html>
+
