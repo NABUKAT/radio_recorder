@@ -6,6 +6,7 @@ import json
 import os
 import re
 from datetime import datetime
+import qrcode
 
 #------------------------------
 # 設定ファイル読み込み
@@ -18,6 +19,12 @@ ip_file = os.path.join(os.path.dirname(__file__), '../ip.txt')
 f = open(ip_file, 'r')
 ip = f.read()
 f.close()
+
+#------------------------------
+# QRコードを生成
+#------------------------------
+img = qrcode.make("http://" + ip + ":8123/")
+img.save(os.path.join(os.path.dirname(__file__), '../QRコード.png'))
 
 #------------------------------
 # 更新日時を更新
