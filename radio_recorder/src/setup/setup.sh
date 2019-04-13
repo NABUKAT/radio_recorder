@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo apt-get update
+sudo apt-get -y upgrade
+sudo apt --fix-broken -y install
+sudo apt-get -y install mplayer rtmpdump swftools libxml2-utils omxplayer
 if [ ! -e /usr/share/alsa/alsa.conf.bak ]; then
 sudo cp -np /usr/share/alsa/alsa.conf /usr/share/alsa/alsa.conf.bak
 fi
@@ -18,10 +22,6 @@ sudo echo "  unset i">> /etc/rc.local
 sudo echo "fi">> /etc/rc.local
 sudo echo "exit 0">> /etc/rc.local
 fi
-sudo apt-get update
-sudo apt-get -y upgrade
-sudo apt --fix-broken -y install
-sudo apt-get -y install mplayer rtmpdump swftools libxml2-utils omxplayer
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
@@ -30,4 +30,5 @@ cd
 sudo pip3 install bottle
 sudo mkdir -p /media/radiko
 sudo mkdir -p /home/pi/RadikoRecorder/setting
+
 exit 0
