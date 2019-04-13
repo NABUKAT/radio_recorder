@@ -20,6 +20,7 @@ sudo echo "exit 0">> /etc/rc.local
 fi
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo apt --fix-broken -y install
 sudo apt-get -y install mplayer rtmpdump swftools libxml2-utils omxplayer
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
