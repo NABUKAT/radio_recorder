@@ -3,8 +3,8 @@
 if [ ! -e /usr/share/alsa/alsa.conf.bak ]; then
 sudo cp -np /usr/share/alsa/alsa.conf /usr/share/alsa/alsa.conf.bak
 fi
-sudo sed -i -e "s/defaults.ctl.card 0/defaults.ctl.card 1/g" /usr/share/alsa/alsa.conf
-sudo sed -i -e "s/defaults.pcm.card 0/defaults.pcm.card 1/g" /usr/share/alsa/alsa.conf
+sudo sh -c "sed -i -e 's/defaults.ctl.card 0/defaults.ctl.card 1/g' /usr/share/alsa/alsa.conf"
+sudo sh -c "sed -i -e 's/defaults.pcm.card 0/defaults.pcm.card 1/g' /usr/share/alsa/alsa.conf"
 if [ ! -e /etc/rc.local.bak ]; then
 sudo cp -np /etc/rc.local /etc/rc.local.bak
 sed -i -e "s/exit 0//g" /etc/rc.local
