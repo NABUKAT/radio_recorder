@@ -1,4 +1,5 @@
 @echo off
+
 setlocal enabledelayedexpansion
 for /f "tokens=1,2* usebackq delims=^:" %%i in (`ipconfig ^| findstr /n /r "." ^| findstr /r "IPv4 アドレス"`) DO @set IP=%%k
 for /f "tokens=1,2,3 usebackq delims=^." %%i in (`echo %IP%`) DO @set nw=%%i.%%j.%%k
@@ -9,4 +10,5 @@ for /f "tokens=1,2 usebackq delims= " %%i in (`arp -a ^| find "b8-27-eb"`) DO @s
 echo.
 echo Raspberry PiのIPアドレス： %IP%
 echo.
+
 pause
