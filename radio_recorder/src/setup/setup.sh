@@ -24,7 +24,6 @@ sudo echo "exit 0">> /etc/rc.local
 fi
 cd /tmp
 wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
 sudo python3 get-pip.py
 cd
 sudo pip3 install bottle
