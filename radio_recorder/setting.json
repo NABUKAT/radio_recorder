@@ -10,6 +10,7 @@
         {"local_filepath": "src/Player/views/editpage.html", "remote_directory": "/home/pi/RadikoPlayer/views", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Player/dirtojson.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Player/myomxplayer.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
+        {"local_filepath": "src/Player/listenmanagement.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Player/player_state.txt", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Player/bottlerun.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Player/webserver.sh", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "755"},

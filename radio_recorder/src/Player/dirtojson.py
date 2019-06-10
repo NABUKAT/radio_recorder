@@ -3,6 +3,8 @@
 import os
 import json
 
+from listenmanagement import ListenManagement
+
 def dirToList(dir):
     rets = {}
     rets[dir] = sorted(os.listdir(dir))
@@ -13,7 +15,11 @@ def dirToList(dir):
     return rets
 
 def dirToListJson(dir):
-    return json.dumps(dirToList(dir), ensure_ascii=False)
+    ret = {}
+    lm = ListenManagement()
+    ret["lm"] = lm.get()
+    ret["dir"] = dirToList(dir)
+    return json.dumps(ret, ensure_ascii=False)
     
 if __name__ == '__main__':
     print(dirToListJson("/media/radiko"))

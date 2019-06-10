@@ -11,6 +11,7 @@ from dirtojson import dirToListJson
 from prefecture2stations import Prefecture2Stations
 from recordersetting import RecSetting
 from recordersetting import RecorderSetting
+from listenmanagement import ListenManagement
 
 class ThreadedWSGIServer(ThreadingMixIn, WSGIServer):
     """マルチスレッド化した WSGIServer"""
@@ -69,6 +70,8 @@ def recradiko():
     if com == "":
         pass
     elif com == "newplay":
+        lm = ListenManagement()
+        lm.update(request.query.path)
         mop = MyOmxplayer()
         mop.newplay(request.query.path)
         return [b"play"]
@@ -106,6 +109,8 @@ def recradiko():
         return [ret.encode('utf-8')]
     elif com == "list":
         if os.path.isfile(request.query.path):
+            lm = ListenManagement()
+            lm.update(request.query.path)
             mop = MyOmxplayer()
             mop.newplay(request.query.path)
             return [b"thisisfile"]

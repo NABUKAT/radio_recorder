@@ -182,11 +182,14 @@ function changestate(p, back=false){
          $("#img_play").hide();
          // 一時停止ボタン表示
          $("#img_pause").show();
+         // 既聴         
+         $("#" + selectorEscape(p)).attr("style", "font-weight:normal;");
          return;
       }
       var getdata = $.parseJSON(data);
       // リスト作成
-      var listdata = getdata[p];
+      var listdata = getdata.dir[p];
+      var lm = getdata.lm;
       var ld = "";
       for(var i in listdata){
          if(typeof listdata[i] == "object"){
@@ -196,8 +199,12 @@ function changestate(p, back=false){
             }
          }
          else{
-             k = listdata[i].replace(/.*\//g, "").replace(/\..*/g, "");
-             ld = ld + "<tr><td class='req_list' id='" + p + "/" + listdata[i] + "' onclick=''>" + k + "</td></tr>"
+            var ss = "style='font-weight:normal;'";
+            if(!lm[p + "/" + listdata[i]]){
+               ss = "style='font-weight:bold;'";
+            }
+            k = listdata[i].replace(/.*\//g, "").replace(/\..*/g, "");
+            ld = ld + "<tr><td class='req_list' id='" + p + "/" + listdata[i] + "' onclick='' " + ss + ">" + k + "</td></tr>"
          }
       }
       if(listdata.length == 0){
@@ -262,6 +269,11 @@ function player_control(com){
          $(".popup-overlay").removeClass("active");
       }
    });
+}
+
+// セレクタエスケープ
+function selectorEscape(val){
+    return val.replace(/[ !"#$%&'()*+,.\/:;<=>?@\[\\\]^`{|}~]/g, '\\$&');
 }
 
 // 5秒に一度状態を確認
