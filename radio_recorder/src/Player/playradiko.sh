@@ -10,11 +10,9 @@ start)
 ;;
 stop)
   echo -n $"Stopping $progname: "
-  proc=`ps alx | grep [m]player | head -n 1 | awk '{print $3}'`
+  proc=`ps alx | grep [f]fplay | head -n 1 | awk '{print $3}'`
   kill $proc
-  proc=`ps alx | grep [m]player | head -n 1 | awk '{print $3}'`
-  kill $proc
-  proc=`ps alx | grep "[p]ulseaudio --start" | head -n 1 | awk '{print $3}'`
+  proc=`ps alx | grep [f]fplay | head -n 1 | awk '{print $3}'`
   kill $proc
 ;;
 *)

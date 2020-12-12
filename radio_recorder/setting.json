@@ -22,7 +22,8 @@
         {"local_filepath": "src/Player/recordersetting.py", "remote_directory": "/home/pi/RadikoPlayer", "user": "pi", "group": "pi", "permission": "644"},
         {"local_filepath": "src/Recorder/radiko_schedule", "remote_directory": "/etc/cron.d", "user": "root", "group": "root", "permission": "644"},
         {"local_filepath": "src/Recorder/rec_set.sh", "remote_directory": "/home/pi/RadikoRecorder/bin", "user": "pi", "group": "pi", "permission": "755"},
-        {"local_filepath": "src/Recorder/radiko.sh", "remote_directory": "/home/pi/RadikoRecorder/bin", "user": "root", "group": "root", "permission": "755"}
+        {"local_filepath": "src/Recorder/radiko.sh", "remote_directory": "/home/pi/RadikoRecorder/bin", "user": "root", "group": "root", "permission": "755"},
+        {"local_filepath": "src/Radikopy/radiko.py", "remote_directory": "/home/pi/radikopy", "user": "pi", "group": "pi", "permission": "644"}
     ],
 
     "dec_procupdn_01": "プロセス起動・停止のコマンドを指定",
