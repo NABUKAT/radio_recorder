@@ -178,12 +178,12 @@ class Radiko(object):
             for dt, url in url_list:
                 if dt in recorded:
                     continue
-                if not os.path.isdir('./tmp'):
-                    os.mkdir('./tmp')
+                if not os.path.isdir('/tmp/tmp'):
+                    os.mkdir('/tmp/tmp')
                 try:
                     ffmpeg\
                     .input(filename=url, f='aac', headers=headers)\
-                    .output(filename=f'./tmp/{dt}.aac')\
+                    .output(filename=f'/tmp/tmp/{dt}.aac')\
                     .run(capture_stdout=True)
                 except Exception as e:
                     logging.warning('failed in run ffmpeg')
@@ -204,7 +204,7 @@ def record(station, rtime, outfilename):
     recorded = radiko.record(rtime)
     # 音声ファイルを一つに
     l = sorted(recorded)
-    files = [f'./tmp/{e}.aac' for e in l]
+    files = [f'/tmp/tmp/{e}.aac' for e in l]
     try:
         streams = [ffmpeg.input(filename=f) for f in files]
         ffmpeg\
@@ -223,4 +223,4 @@ if __name__ == '__main__':
     if sys.argv[1] == "play":
         play(sys.argv[2])
     elif sys.argv[1] == "record":
-        record(sys.argv[2], sys.argv[3], sys.argv[4])
+        record(sys.argv[2], int(sys.argv[3]), sys.argv[4])
