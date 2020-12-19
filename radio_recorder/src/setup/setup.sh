@@ -27,8 +27,6 @@ wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 cd
 sudo pip3 install bottle
-sudo pip3 install ffmpeg-python
-sudo pip3 install m3u8
 sudo mkdir -p /media/radiko
 sudo mkdir -p /home/pi/RadikoRecorder/setting
 
